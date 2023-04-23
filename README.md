@@ -1,13 +1,13 @@
-<h1 align='center'> :microscope: Classification Analysis-Cardiovascular-Risk-Prediction.<h1>
+<h1 align='center'> :microscope: Classification Analysis-Cardiovascular-Risk-Prediction.</h1>
 
 ![--------------------------------------------------------------------------------------------](https://github.com/andreasbm/readme/blob/master/assets/lines/grass.png)
 
-### This repository contains the code and dataset for predicting the 10YearCHD using classification analysis. The project uses a dataset containing patients records between the age gruop of 32 to 70.
+### This repository contains the and dataset and the research notbook consisting various aproches for predicting the 10YearCHD in a person with the given 16 impact featues using classification analysis. The project uses a dataset containing patients records between the age gruop of 32 to 70.
 ![--------------------------------------------------------------------------------------------](https://github.com/andreasbm/readme/blob/master/assets/lines/grass.png)
 
 ## 📋 Abstract
 
-<p>Coronary heart disease, which is a form of cardiovasular disease (CHD), is the leading cause of death worldwide. The odds of survival are good if it is found or diagnosed early. Heart Disease is even highlighted as a silent killer which leads to the death of the person with out obvious symptoms. The project discusses a compararative approach to the classification of coronary heart disease diataset using machine learning (ML) algorithms. The current study created and tested sevral machine learning based classification models. The dataset was subjected to SMOTE to handle unbalanced classes and feature selection techniques to assess the impact on two distinct classes on the performance metrics.</p>
+<p>Coronary heart disease, which is a form of cardiovasular disease (CHD), is the leading cause of death worldwide. The odds of survival are good if it is found or diagnosed early. Heart Disease is even highlighted as a silent killer which leads to the death of the person with out obvious symptoms. The project discusses a compararative approach to the classification of coronary heart disease diataset using machine learning (ML) algorithms. The current study created and tested sevral machine learning based classification models. The dataset was subjected to SMOTE to handle unbalanced classes and feature selection techniques to assess the impact on two distinct classes on the performance metrics. And uses these matrics to evaluate the perforamce of ML model and selection the best perfornming model which also fulfill the business objectives.</p>
 
 ![--------------------------------------------------------------------------------------------](https://github.com/andreasbm/readme/blob/master/assets/lines/grass.png)
 
@@ -23,13 +23,13 @@
 - [Dataset](https://drive.google.com/file/d/1vOD0aTReRRjglKlM1q_EgL2cd6Z4I7OW/view?usp=share_link) - Dataset taken from AlmaBetter
 
 ### Input Files:
-  <li><b>data_cardiovascular_risk.csv</b> - It contains monthly observation of stock parameter such as open, high , low and close.</li>
+  <li><b>data_cardiovascular_risk.csv</b> - It contains patients record distributed overy 16 distinct features.</li>
 
 ### Executable Files:
-- [Regression Analysis On Stock Closing Price Prediction](Yes_Bank_Stock_Closing_Price_Prediction_Capstone_Project.ipynb) - Includes all functions required for bulding and deploying the model
+- [Classification_Analysis_On_CHD_Dataset](https://colab.research.google.com/drive/19UwoEde09bs66MB5YHyGWFnwdOdWDlZi?usp=share_link) - Includes all functions required for bulding and deploying the model
 
 ### Output:
-- [Google Colab](Yes_Bank_Stock_Closing_Price_Prediction_Capstone_Project.ipynb) - All the outputs are visible in the provided colab notebook.
+- [Google Colab](https://colab.research.google.com/drive/19UwoEde09bs66MB5YHyGWFnwdOdWDlZi?usp=share_link) - All the outputs are visible in the provided colab notebook.
 
 ![--------------------------------------------------------------------------------------------](https://github.com/andreasbm/readme/blob/master/assets/lines/grass.png)
 
@@ -38,27 +38,27 @@
 <hr>
 
 ### Step 1: Data Collection
-Collect the historical stock prices of Yes Bank from January 2005 to September 2020. Include variables such as opening price, highest price, lowest price, and closing price and date
+Given the patients reocrd between the age of 32 to 70 with the various feature which may impact towards the target variabel of 10YearCHD.
 
 <hr>
 
 ### Step 2: Data Cleaning and Preprocessing
-Clean the dataset by removing any missing values, outliers, or errors. Preprocess the dataset by scaling or normalizing the features as necessary.
+Clean the dataset by TREATING any missing values, outliers, or errors. Preprocess the dataset by scaling or normalizing the features as necessary.
 
 <hr>
 
-### Step 3: Regression Model Building
-Divide the dataset into training and testing sets. Implement Multiple Linear Regression and Support Vector Regression (SVR) models to predict the closing price of Yes Bank stock. Tune the models by adjusting the hyperparameters to optimize performance.
+### Step 3: Classification Model Building
+Divide the dataset into training and testing sets. Implement Multiple Classification models to predict the 10YearCHD of the patient. Tune the models by adjusting the hyperparameters to optimize performance.
 
 <hr>
 
 ### Step 4: Model Evaluation
-Evaluate the models' performance using root mean squared error (RMSE) and mean absolute error (MAE) metrics. Compare the performance of the models to determine which one performs better.
+Evaluate the models' performance using F1-Score and AUC-ROC metrics. Compare the performance of the models to determine which one performs better and fulfill the business requirement.
 
 <hr>
 
 ### Step 5: Results and Conclusion
-Present the results of the regression analysis. Discuss the implications of the results and their potential impact on investors. Provide conclusions and suggestions for future research.
+Present the results of the classification analysis. Discuss the implications of the results and their potential impact on stackholders. Provide conclusions and suggestions for future research.
 
 ![--------------------------------------------------------------------------------------------](https://github.com/andreasbm/readme/blob/master/assets/lines/grass.png)
 
@@ -86,9 +86,7 @@ Present the results of the regression analysis. Discuss the implications of the 
 
 ## :scroll: Conclusion
 
-After implementing six regression model and analyzing theri respective performance matrics we came to the conclusion that the <b>"Optimal_RandomRegression"</b> and
-<b>XGBRegressor</b> are top performing models with respect to all the matrics. But when we look for the cross validation score and other factores such as time complexity, we select the <b>Optimal_RandomForest</b> as a final deployment model.
-
+After implementing seven classification model and analyzing their respective performance matrics we came to the conclusion that the <b>"Optimal_XGBoost"</b> is top performing models with respect to the matrics we have choosen.
 
 ![--------------------------------------------------------------------------------------------](https://github.com/andreasbm/readme/blob/master/assets/lines/grass.png)
 
